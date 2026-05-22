@@ -134,6 +134,13 @@ internal class Ejemplos
             Console.WriteLine(libro.Titulo);
         }
 
+        //6.
+        Console.WriteLine("\nLista de libros:");
+        foreach (var libro in casoLinq.GetLibros())
+        {
+            Console.WriteLine(libro);
+        }
+
         //7.
         Console.WriteLine("\nLibro con mayor precio:" + casoLinq.GetMayorPrecio().Titulo);
 

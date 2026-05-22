@@ -51,6 +51,10 @@ public class CasoLinq
         return libros.Where(l => l.Id > 15).ToList();
     }
     //6.
+    public List<string> GetLibros()
+    {
+        return libros.Select(l => $"{l.Titulo} - ${l.Precio}").ToList();
+    }
     //7.
     public Libro GetMayorPrecio()
     {
